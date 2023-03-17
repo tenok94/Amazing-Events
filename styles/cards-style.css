@@ -1,0 +1,26 @@
+/* .card-body{
+    max-width: 600px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-color: #ede9e7;
+    text-align: center;
+    padding: 30px;
+    color: #018980;
+    box-shadow: 3px 3px 10px #ccc;
+} */
+
+.card{
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+#search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+  
+#search-input {
+    flex-grow: 1;
+    margin-right: 10px;
+}

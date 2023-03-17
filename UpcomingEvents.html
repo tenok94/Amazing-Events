@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/style.css">
+        <link rel="stylesheet" href="styles/cards-style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+        <link rel="shortcut icon" href="img/Rae/favicon.ico" type="image/x-icon">
+        <title>Amazing Events</title>
+    </head>
+<body>
+    <header>
+        <nav class="navbar-conteiner"><!--son 2 clases en 1-->
+            <a href="./Home.html">
+                <img class="logo-RAE" src="./img/Rae/Logo-Rae.png" width="200" alt="Logo">
+            </a>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="./Home.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./UpcomingEvents.html" class="nav-link">Up Coming Events</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./PastEvents.html" class="nav-link">Past Events</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./Contact.html" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./Stats.html" class="nav-link">Stats</a>
+                </li>
+                <div class="active"></div> <!--animacion de barra-->
+            </ul>
+        </nav>
+    </header>
+    <div class="navar-big">
+        <div class="a-flecha">
+            <a href="./Home.html">
+                <img class="flecha" src="./img/Rae/flecha-izquierda.png" alt="">
+            </a>
+        </div>
+        <div class="titulo">
+            <h2>UpComing Events</h2>
+        </div>
+        <div class="a-flecha">
+            <a href="./PastEvents.html">
+                <img class="flecha" src="./img/Rae/flecha-derecha.png" alt="">
+            </a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="d-flex align-items-baseline">
+                <div id="category-filter">
+                    <label><input type="checkbox" name="category" value="Food Fair"> Food Fair</label>
+                    <label><input type="checkbox" name="category" value="Museum"> Museum</label>
+                    <label><input type="checkbox" name="category" value="Costume Party"> Costume Party</label>
+                    <label><input type="checkbox" name="category" value="Music Concert"> Music Concert</label>
+                    <label><input type="checkbox" name="category" value="Race"> Race</label>
+                    <label><input type="checkbox" name="category" value="Book Exchange"> Book Exchange</label>
+                  </div>
+        </div>
+        <div id="search-container" class="mt-4">
+            <input type="text" id="search-input" class="form-control" placeholder="Search...">
+            <button id="search-button" class="btn btn-primary">Search</button>
+        </div>
+    </div>
+    <main>
+        <div class="row row-cols-1 row-cols-md-3 g-4" id="upcoming-events-container">
+        </div>
+
+        <script src="script/data.js"></script>
+        <script src="script/UpcomingEvents.js"></script>
+        
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-social">
+                <ul class="footer-ul">
+                    <li class="items">
+                        <a href="https://www.instagram.com/londro_x/">
+                            <img src="./img/Rae/instagram-icono.png.png" alt="instagram">
+                        </a>
+                    </li>
+                    <li class="items">
+                        <a href="https://www.facebook.com/leandrohernan.tolaba.5/">
+                            <img src="./img/Rae/facebook-icono.png.png" alt="">
+                        </a>
+                    </li>
+                    <li class="items">
+                        <a href="https://wa.me/543804810923">
+                            <img src="./img/Rae/whatsapp-icono.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-copyright">
+                <span class="span-copyright">&copy; Cohorte</span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

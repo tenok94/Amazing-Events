@@ -1,0 +1,136 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+	font-size: 1.6rem;
+    background-color: #fff;
+}
+
+.logo-RAE{
+    margin-left: 20px;
+}
+
+a{
+    list-style:none;
+    text-decoration: none;
+    color: inherit;
+    /* padding-left: 70px; */
+}
+
+/* .btn, .btn-1{
+    border-radius: none;
+    border: none;
+    background: white;
+    margin: 0  10px 0 0;
+} */
+
+/*-----------------------------Header---------------------------------------------*/
+header{
+    background-color: #ffd803;
+}
+nav{
+    display: flex;
+    align-items: baseline;
+    flex-wrap: nowrap;
+}
+.navbar-conteiner{
+    display: flex;
+    align-items: baseline;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+/* .containerr{
+    max-width: 98rem;
+	margin-inline: auto;
+	padding-inline: 1.5rem;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 1.5rem;
+} */
+.nav-list{
+    position: relative;
+    display: flex;
+    list-style: none;
+}
+.nav-item {
+	min-width: 10rem;
+	text-align: center;
+	padding-block: 1rem;
+}
+.nav-link{
+    text-transform: uppercase;/*hace el texto en mayuscula*/
+}
+.active{
+    position: absolute;
+    bottom: -0.2rem;
+	height: 2px;
+	width: 8rem;
+	background-color: #fff;
+	transition: transform 0.25s;
+}
+.nav-item:nth-child(2):hover ~ .active {
+	transform: translateX(10rem);
+}
+.nav-item:nth-child(3):hover ~ .active {
+	transform: translateX(20rem);
+}
+.nav-item:nth-child(4):hover ~ .active {
+	transform: translateX(30rem);
+}
+.nav-item:nth-child(5):hover ~ .active {
+	transform: translateX(40rem);
+}
+/*-----------------------------Main---------------------------------------------*/
+.h2-main{
+    text-align: center;
+    padding-top: 20px;
+}
+.flecha:hover{
+    width: 75px;
+}
+.navar-big{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #74C8FC;
+}
+.container-tabla{
+    padding: 20px;
+}
+table{
+    border-collapse: separate;
+}
+th{
+    background-color: #272343;
+    color: white;
+}
+th, th, td, tr{
+    padding: 20px;
+    /* border: #ffd803 5px solid; */
+}
+/*-----------------------------Footer---------------------------------------------*/
+footer{
+    height: 86px;
+    width: 100%;
+    background-color: #ffd803;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+.footer-ul{
+    display: flex;
+    align-items: baseline;
+    list-style:none;
+    text-decoration: none;
+}
+.items{
+    padding: 10px;
+}
