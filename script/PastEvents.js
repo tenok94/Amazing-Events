@@ -1,3 +1,6 @@
+fetch('https://mindhub-xj03.onrender.com/api/amazing')
+.then(response => response.json())
+.then(data => {
   let currentDate = new Date(data.currentDate)
   currentDate.setMinutes(currentDate.getMinutes() + currentDate.getTimezoneOffset())
   
@@ -33,7 +36,6 @@
           <p class="card-text">${event.description}</p>
           <ul class="list-group list-group-flush">
               <li class="list-group-item"><strong>Date:</strong> ${event.date}</li>
-              <li class="list-group-item"><strong>Category:</strong> ${event.category}</li>
               <li class="list-group-item"><strong>Place:</strong> ${event.place}</li>
               <li class="list-group-item"><strong>Capacity:</strong> ${event.capacity}</li>
               <li class="list-group-item"><strong>Assistance:</strong> ${event.assistance}</li>
@@ -112,7 +114,6 @@ events.forEach(function(event) {
           <p class="card-text">${event.description}</p>
           <ul class="list-group list-group-flush">
               <li class="list-group-item"><strong>Date:</strong> ${event.date}</li>
-              <li class="list-group-item"><strong>Category:</strong> ${event.category}</li>
               <li class="list-group-item"><strong>Place:</strong> ${event.place}</li>
               <li class="list-group-item"><strong>Capacity:</strong> ${event.capacity}</li>
               <li class="list-group-item"><strong>Assistance:</strong> ${event.assistance}</li>
@@ -126,3 +127,5 @@ events.forEach(function(event) {
   eventsContainer.innerHTML += eventCard;
 });
 }
+})
+.catch(error => console.error(error));

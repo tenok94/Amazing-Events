@@ -1,3 +1,6 @@
+fetch('https://mindhub-xj03.onrender.com/api/amazing')
+.then(response => response.json())
+.then(data => {
   let currentDate = new Date(data.currentDate)
   currentDate.setMinutes(currentDate.getMinutes() + currentDate.getTimezoneOffset())
   /* console.log(currentDate) */
@@ -129,3 +132,5 @@ events.forEach(function(event) {
   eventsContainer.innerHTML += eventCard;
 });
 }
+})
+.catch(error => console.error(error));
